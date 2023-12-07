@@ -1,0 +1,17 @@
+::ng-deep .spacer{
+    margin-left: 100px;
+}
+::ng-deep .mat-toolbar-row, .mat-toolbar-single-row{
+    display: flex;
+    justify-content: center;
+    
+   
+}
+::ng-deep .navbar a .mdc-button__label{
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
+    text-shadow: 5px 3px 10px;
+   
+}   
+

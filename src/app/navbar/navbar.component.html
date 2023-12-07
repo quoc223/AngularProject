@@ -1,0 +1,36 @@
+<mat-toolbar class="navbar" color="primary">
+    <a  mat-button routerLink="Trang Chủ"><mat-icon>home</mat-icon>Trang Chủ</a>
+    <a mat-button routerLink="Thời Sự">Thời Sự</a>
+    <a mat-button routerLink="Giải Trí">Giải Trí</a>
+    <a mat-button [matMenuTriggerFor]="kd">Kinh Doanh</a>
+    <mat-menu #kd="matMenu">
+        <button mat-menu-item >Doanh nghiệp</button>
+        <button mat-menu-item >Hàng Hóa</button>
+        <button mat-menu-item >Kinh Doanh Bất Động Sản</button>
+
+
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="mk">Làm Đẹp</button>
+    <mat-menu #mk="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="spa">Spa</button>
+    </mat-menu>
+
+    <!-- liên kết n menu -->
+    <mat-menu #spa="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="fd">Dưỡng Da</button>
+        <mat-menu #fd="matMenu">
+           <button mat-menu-item>Phương Pháp</button>
+           <button mat-menu-item>Chăm Sóc</button>
+           <button mat-menu-item>Theo Giỏi</button>
+           <button mat-menu-item>Bình Luận</button>
+           <button mat-menu-item>Bảng Giá</button> 
+            
+        </mat-menu>
+    </mat-menu>
+    <div class="spacer">
+        <a mat-raised-button color="accent" routerLink="Đăng Nhập">Đăng Nhập</a>
+        <a mat-date-range-input="2"></a>
+    </div>
+    
+</mat-toolbar>
+
